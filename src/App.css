@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: honeydew;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.date{
+  padding: 10px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#todoForm{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ /* background-color: red; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#todoInput{
+  width:50%;
+  height: 30px;
+  border-radius: 5%;
+  margin: 0px 10px;
+}
+#addTodoBtn{
+  width: fit-content;
+  padding: 0px 10px;
+  border-radius: 10%;
+}
+
+#todoList, #editTodo{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px 0px 0px 0px;
 }
-
-.App-link {
-  color: #61dafb;
+input[type="checkbox"]{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
+#todoname{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 50%;
+  /* background-color: yellow; */
+}
+#editBtn{
+  width: fit-content;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 10%;
+  margin: 0px 10px;
+}
+#deleteBtn{
+  width: fit-content;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 10%;
+}
+#editedtodo{
+  width:50%;
+  height: 30px;
+  font-size: 2rem;
+  border-radius: 5%;
+}
+#saveBtn{
+  width: fit-content;
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 10%;
+  margin: 0px 10px;
+}
+#cancelBtn{
+  width: fit-content;
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 10%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+}
+#todoscounter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px 0px 5px 0px;
+}
+#todoscounter p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+@media (max-width:470px){
+  #todoInput{
+  width: 70%;
   }
 }
